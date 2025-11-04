@@ -1,0 +1,172 @@
+/* 🌆 Genel görünüm */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #333;
+}
+
+/* 🧭 Header */
+header {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* 🔍 Arama kutusu */
+.search-box {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* 📦 Kart listesi */
+#event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 🎴 Kart stili */
+.event-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.event-card h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.event-card p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.event-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.event-card a:hover {
+  text-decoration: underline;
+}
+
+/* 🏷️ Kategori etiketi */
+.category-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.category-Art {
+  background: #0078ff;
+}
+.category-Heritage {
+  background: #28a745;
+}
+.category-Museum {
+  background: #ff9800;
+}
+.category-Default {
+  background: #9c27b0;
+}
+
+/* 🕓 Loading mesajı */
+#loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 30px;
+  display: none;
+}
+
+/* ⚙️ Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fafafa;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffcc00;
+  transition: transform 0.2s;
+}
+
+.fav-btn:hover {
+  transform: scale(1.2);
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#toggle-favorites {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+#toggle-favorites.active {
+  background-color: #ffaa00;
+  color: white;
+}
+
+#toggle-favorites:hover {
+  transform: scale(1.05);
+}
