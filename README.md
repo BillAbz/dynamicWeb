@@ -50,7 +50,7 @@ De app ondersteunt zoeken, filteren, favorieten opslaan en een donkere modus ðŸŒ
 
 
 **WEBSITE API:** 
-[text](https://bruxellesdata.opendatasoft.com/explore/dataset/lieux_culturels_touristiques_evenementiels_visitbrussels_vbx/api/?utm_source=chatgpt.com&disjunctive.visit_category_en_multi&disjunctive.translations_fr_address_zip&disjunctive.add_municipality_fr&disjunctive.pmr_en&disjunctive.accessibilities_translations_en_item)
+[Link van API](https://bruxellesdata.opendatasoft.com/explore/dataset/lieux_culturels_touristiques_evenementiels_visitbrussels_vbx/api/?utm_source=chatgpt.com&disjunctive.visit_category_en_multi&disjunctive.translations_fr_address_zip&disjunctive.add_municipality_fr&disjunctive.pmr_en&disjunctive.accessibilities_translations_en_item)
 
 ðŸ“˜ [Bekijk de API-documentatie](https://opendata.brussels.be/pages/home/)
 
