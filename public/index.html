@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>🏙️ Brussels Explorer</h1>
     <p>Ontdek culturele en toeristische plekken in Brussel</p>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
   </header>
 
   <main>
     <div class="toolbar">
         <input type="text" id="search" class="search-box" placeholder="Zoek evenementen..." />
         <button id="toggle-favorites">⭐ Alleen favorieten</button>
+        <select id="categoryFilter">
+          <option value="">Alle categorieën</option>
+          <option value="monumenten & locaties">Monumenten & locaties</option>
+          <option value="musea & bezoeken">Musea & bezoeken</option>
+          <option value="handwerk">Handwerk</option>
+        </select>
+
     </div>
     <div id="loading">Evenementen laden...</div>
     <div id="event-list"></div>
