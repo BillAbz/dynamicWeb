@@ -10,9 +10,9 @@ let allEvents = [];
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 let showingFavorites = false;
 
-// ---------------------------
-// 1️⃣ API get data
-// ---------------------------
+/* ---------------------------
+   1️⃣ API get data
+   ---------------------------  */
 async function loadEvents() {
   const url = "https://opendata.brussels.be/api/explore/v2.1/catalog/datasets/lieux_culturels_touristiques_evenementiels_visitbrussels_vbx/records?limit=100";
   const eventList = document.getElementById("event-list");
@@ -38,9 +38,9 @@ async function loadEvents() {
   }
 }
 
-// ---------------------------
-// 2️⃣ get list DATA
-// ---------------------------
+/* ---------------------------
+   2️⃣ get list DATA
+   --------------------------- */
 function displayEvents(events) {
   const eventList = document.getElementById("event-list");
   eventList.innerHTML = "";
@@ -79,7 +79,7 @@ function displayEvents(events) {
       </div>
       <h3>${name}</h3>
       <p><strong>Adres:</strong> ${address}, ${zip} ${commune}</p>
-      <a href="${mapLink}" target="_blank">📍 View on Google Maps</a>
+      <a href="${mapLink}" target="_blank">📍 Zie op Google Maps</a>
     `;
 
     eventList.appendChild(card);
